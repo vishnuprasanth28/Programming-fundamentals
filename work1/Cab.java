@@ -21,6 +21,7 @@ public class Cab {
 		if(kiloMeter>0) {
 		System.out.println("choose your cab type micro, mini, prime ");
 		String cabType = sc.next();
+		while (!Pattern.matches("^[A-Z][a-z]+", cabType)) {
 		
 		if (cabType.equalsIgnoreCase("Micro")) {
 			System.out.println(" Calculated hire price for "+userName+": "+CabFare.micro(kiloMeter));
@@ -34,12 +35,14 @@ public class Cab {
 		else {
 			System.out.println("Please enter the cab type");
 		}
+		break;
+		}
 		
 		
 		
 	}
 		else {
-			System.out.println("Please enter a valid number");
+			System.out.println("Please enter a valid data");
 		}
 	}
 }
