@@ -7,11 +7,11 @@ public class Pattern3 {
 
 	    public static void printPattern(int rows) {
 	    	 for(int i=4;i>=1;i--) {
-	             for(int space=i;space<4;space++) {
+	             for(int j=i;j<4;j++) {
 	                 System.out.print(" ");
 	             }
-	             for(int j=1;j<=2*i-1;j++) {
-	                 if(j%2==0) {
+	             for(int k=1;k<=2*i-1;k++) {
+	                 if(k%2==0) {
 	                     System.out.print(0);
 	                 }
 	                 else {
